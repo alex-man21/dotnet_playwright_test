@@ -73,7 +73,7 @@ public class AcmeBankTests2
             // Create the Classic runner.
             Runner = new ClassicRunner();
         }
-        Runner.DontCloseBatches = true;
+        //Runner.DontCloseBatches = true;
 
         // Create a new batch for tests.
         // A batch is the collection of visual checkpoints for a test suite.
@@ -92,7 +92,7 @@ public class AcmeBankTests2
 
         // Set the batch for the config.
         Config.SetBatch(Batch);
-        //Config.SetDontCloseBatches(true);
+        Config.SetDontCloseBatches(true);
 
         // If running tests on the Ultrafast Grid, configure browsers.
         if (UseUltrafastGrid)
